@@ -6,7 +6,6 @@
 ** Parity is set to 1, where 1 is on, 0 off.
 ** This is run 1. Years 1880-1900
 ************************************************************************
-
 segments 21
 input_file ./Inputs2SOCSIM/init_black
 output_file ./Results/results_blackconstant_r1
@@ -20,7 +19,6 @@ include ./Inputs2SOCSIM/mortalityRates/asmp_black_y1880
 include ./Inputs2SOCSIM/marriageRates/marrates_black_constant_y1880
 include ./Inputs2SOCSIM/fertilityRates/asfr_black_y1880
 run
-* 1881
 duration 12
 bint 0
 hetfert 0

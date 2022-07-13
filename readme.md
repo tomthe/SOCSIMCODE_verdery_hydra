@@ -24,3 +24,27 @@ from
 
 to 
 ./
+
+
+
+## Problems and puzzling things
+
+#### Socsim gives a syntax error on a line with only a comment!?
+
+Solved: I converted the file with notepad++ from utf-8 to ASCII AND converted the line-endings to windows. Now it runs. Probably only one of those things is necessary
+
+
+#### Socsim wants to read results from ./Results/last but there nothing produces output there
+
+maybe the Stata-script copies the the socsim-result-files to this place?
+
+...yes, if I understand it correctly, the stata-file does this. But I don't understand what it does exactly
+
+#### The Stata-script uses data that is not in the download
+
+see e.g. line 67 in the do-file: 
+```
+//Get the TFR for this year and adjust parity/age curve
+	qui use ../Data/tfr, clear
+```
+it tries to load total fertility rates from the ../Data-directory

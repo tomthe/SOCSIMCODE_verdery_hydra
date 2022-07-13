@@ -1,0 +1,222 @@
+************************************************************************
+** Copyright Ashton Verdery, July 2016
+** This contains the supervisory file code for the US kinless paper.
+** This is for black.
+** And divorce scenario is constant.
+** Parity is set to 1, where 1 is on, 0 off.
+** This is run 1. Years 1880-1900
+************************************************************************
+
+segments 21
+input_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/init_black
+output_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/results_blackconstant_r1
+* 1880
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071399
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1880
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1880
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1880
+run
+* 1881
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071454
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1881
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1881
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1881
+run
+* 1882
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071509
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1882
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1882
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1882
+run
+* 1883
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071563
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1883
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1883
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1883
+run
+* 1884
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071618
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1884
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1884
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1884
+run
+* 1885
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071673
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1885
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1885
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1885
+run
+* 1886
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071727
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1886
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1886
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1886
+run
+* 1887
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071782
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1887
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1887
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1887
+run
+* 1888
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071837
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1888
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1888
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1888
+run
+* 1889
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071891
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1889
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1889
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1889
+run
+* 1890
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5071946
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1890
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1890
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1890
+run
+* 1891
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072001
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1891
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1891
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1891
+run
+* 1892
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072055
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1892
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1892
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1892
+run
+* 1893
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .507211
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1893
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1893
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1893
+run
+* 1894
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072165
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1894
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1894
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1894
+run
+* 1895
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072219
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1895
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1895
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1895
+run
+* 1896
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072274
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1896
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1896
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1896
+run
+* 1897
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072328
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1897
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1897
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1897
+run
+* 1898
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072383
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1898
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1898
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1898
+run
+* 1899
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072438
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1899
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1899
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1899
+run
+* 1900
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072492
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1900
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_constant_y1900
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1900
+run

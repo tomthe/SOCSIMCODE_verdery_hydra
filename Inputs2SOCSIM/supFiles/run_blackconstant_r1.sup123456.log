@@ -1,0 +1,15 @@
+ Á
+
+
+ Socsim Version: STANDARD-UNENHANCED-VERSION
+
+openning ./supFiles/run_blackconstant_r1.sup 
+starting  with line 4321411 at 4321411
+number of segments: 21
+duration: 12
+birth interval 0
+
+no heterogeneous fertility
+find random fathers 1
+prop males 0.507140
+loading /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1880 ... Can't open ratefile: /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1880

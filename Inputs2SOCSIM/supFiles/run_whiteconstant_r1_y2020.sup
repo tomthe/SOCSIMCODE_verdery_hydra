@@ -1,0 +1,22 @@
+************************************************************************
+** Copyright Ashton Verdery, July 2016
+** This contains the supervisory file code for the US kinless paper.
+** This is for white.
+** And divorce scenario is constant.
+** Parity is set to 1, where 1 is on, 0 off.
+** This is run 1. Year 2020
+************************************************************************
+
+segments 1
+input_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/last
+output_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/results_whiteconstant_r1
+* 2020
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5120989
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_white_y2020
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_white_constant_y2020
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_white_y2020
+run

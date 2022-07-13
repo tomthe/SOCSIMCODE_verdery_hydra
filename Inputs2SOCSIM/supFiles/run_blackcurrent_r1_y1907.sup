@@ -1,0 +1,22 @@
+************************************************************************
+** Copyright Ashton Verdery, July 2016
+** This contains the supervisory file code for the US kinless paper.
+** This is for black.
+** And divorce scenario is current.
+** Parity is set to 1, where 1 is on, 0 off.
+** This is run 1. Year 1907
+************************************************************************
+
+segments 1
+input_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/last
+output_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/results_blackcurrent_r1
+* 1907
+duration 12
+bint 0
+hetfert 0
+random_father 1
+proportion_male .5072874
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_black_y1907
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_black_y1907
+include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_black_y1907
+run

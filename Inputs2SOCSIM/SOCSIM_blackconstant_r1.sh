@@ -3,7 +3,7 @@
 ./socsim.exe ./supFiles/run_blackconstant_r1.sup 123456
 sleep 10
 wait $!
-stata-mp -b do ../Programs/RescaleRates 1 black constant 1 1901
+C:\Program Files\Stata17\StataMP-64.exe -b do ../Programs/RescaleRates 1 black constant 1 1901
 sleep 10
 wait $!
 ./socsim.exe ./supFiles/run_blackconstant_r1_y1901.sup 123456

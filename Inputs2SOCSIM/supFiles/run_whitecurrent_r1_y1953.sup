@@ -8,15 +8,15 @@
 ************************************************************************
 
 segments 1
-input_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/last
-output_file /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Results/results_whitecurrent_r1
+input_file ./Results/last
+output_file ./Results/results_whitecurrent_r1
 * 1953
 duration 12
 bint 0
 hetfert 0
 random_father 1
 proportion_male .5142838
-include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/mortalityRates/asmp_white_y1953
-include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/marriageRates/marrates_white_y1953
-include /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM/fertilityRates/asfr_white_y1953
+include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1953
+include ./Inputs2SOCSIM/marriageRates/marrates_white_y1953
+include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1953
 run

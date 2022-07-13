@@ -19,7 +19,7 @@ if c(username)=="amv5430"{
 	global localdir="D:\StataLocalD"
 	}
 else{
-	cd /hdir/0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM
+	cd ./Inputs2SOCSIM
 	global localdir="/hdir/0/verdery"
 	}	
 

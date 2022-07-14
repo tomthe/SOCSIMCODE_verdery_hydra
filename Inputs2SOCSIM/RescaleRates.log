@@ -58,7 +58,7 @@ scientists may also do important work.
 . else{
 .         cd ./Inputs2SOCSIM
 /data/Dropbox0/verdery/Dropbox/DemographyLab/USnoKin/Inputs2SOCSIM
-.         global localdir="/hdir/0/verdery"
+.         global localdir="U:\dev\socsim_projects\SOCSIMCODE"
 .         }       
 
 . 

@@ -1,4 +1,5 @@
 //This takes a socsim output and rescales the age-parity-status fertility rates accordingly
+display "here I am in stata! 1"
 
 args r race divorcescenario parity y
 //r: run number
@@ -12,6 +13,7 @@ args r race divorcescenario parity y
 *local parity=1
 *local y=1901
 
+display "here I am in stata! 2"
 clear all
 set seed 20120616
 if c(username)=="amv5430"{
@@ -19,10 +21,12 @@ if c(username)=="amv5430"{
 	global localdir="D:\StataLocalD"
 	}
 else{
-	cd ./Inputs2SOCSIM
-	global localdir="/hdir/0/verdery"
+	cd
+	cd .\Inputs2SOCSIM
+	global localdir="U:\dev\socsim_projects\SOCSIMCODE"
 	}	
 
+display "here I am in stata! 3"
 ////////////////////
 //Define npflag if it's parity, define month from year
 	//if parity is off, save the rates with a noparity flag
@@ -42,7 +46,7 @@ capture prog def parityadjust
 args tfr year
 	//all
 	preserve
-		qui use ../Data/ParityByAgeGeneratingData, clear
+		qui use ./Data/ParityByAgeGeneratingData, clear
 		qui reg pr b14.age##b1.order##c.tfr if ccode=="USA"
 		qui keep if ccode=="USA"
 		keep age order
@@ -64,7 +68,7 @@ end
 
 ////////////////////
 //Get the TFR for this year and adjust parity/age curve
-	qui use ../Data/tfr, clear
+	qui use ./Data/tfr, clear
 	keep year *`race'
 	qui keep if year==`y'
 	qui su tfr
@@ -94,7 +98,7 @@ end
 		
 ////////////////////
 //Get and scale by marrital status breakdown
-	use ../Data/pr2married, clear
+	use ./Data/pr2married, clear
 	keep year *`race'
 	qui su pct2mar if year==`y'
 	local pct2mar=r(mean)
@@ -132,14 +136,15 @@ end
 //Get the proportions in each group	and rescale rates accordingly
 
 //Remove the otx, opox and pyr files
-capture rm ../Results/results_`race'`divorcescenario'`npflag'_r`r'.otx
-capture rm ../Results/results_`race'`divorcescenario'`npflag'_r`r'.opox
-capture rm ../Results/results_`race'`divorcescenario'`npflag'_r`r'.pyr
+capture rm ./Results/results_`race'`divorcescenario'`npflag'_r`r'.otx
+capture rm ./Results/results_`race'`divorcescenario'`npflag'_r`r'.opox
+capture rm ./Results/results_`race'`divorcescenario'`npflag'_r`r'.pyr
 
+display "here I am in stata! 10"
 sleep 250
 
 //Bring in marriage data
-	qui insheet using ../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar, clear
+	qui insheet using ./Results/results_`race'`divorcescenario'`npflag'_r`r'.omar, clear
 	qui replace v1=trim(itrim(v1))
 	local k=1
 	foreach i in mid wpid hpid dstart dend rend wprior hprior{
@@ -154,7 +159,7 @@ sleep 250
 	qui putmata marrs=(wpid dstart dend), replace
 
 //Load up opop data
-	qui insheet using ../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop, clear
+	qui insheet using ./Results/results_`race'`divorcescenario'`npflag'_r`r'.opop, clear
 	qui replace v1=trim(itrim(v1))
 	local k=1
 	foreach i in pid fem group nev dob mom pop nesibm nesibp lborn marid mstat dod fmult{
@@ -277,7 +282,7 @@ sleep 250
 	drop all
 	
 //Store adjustment factors
-	*qui save ../Results/AdjustmentFactors/`race'`npflag'`divorcescenario'_y`y', replace
+	*qui save ./Results/AdjustmentFactors/`race'`npflag'`divorcescenario'_y`y', replace
 
 //Put rescaled rates into mata, where rf=1/(n/all) and rescaled rate=rf*rate
 	//note: deal with intervals 0-14 and 51-100 as per above
@@ -314,6 +319,7 @@ sleep 250
 			}
 		}
 
+display "here I am in stata! 17"
 ////////////////////
 //Write the rates using rescaled numbers
 capture rm "${localdir}//asfr_`race'`npflag'_y`y'"
@@ -355,15 +361,16 @@ sleep 10
 rm "${localdir}//asfr_`race'`npflag'_y`y'"
 
 //change the file names of the prior results files to last
-capture confirm file "../Results/last.omar"
+capture confirm file "./Results/last.omar"
 if (!_rc){
-	rm "../Results/last.omar"
+	rm "./Results/last.omar"
 	}
-capture confirm file "../Results/last.opop"
+capture confirm file "./Results/last.opop"
 if (!_rc){
-	rm "../Results/last.opop"
+	rm "./Results/last.opop"
 	}
 sleep 500
-qui changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "../Results/last.omar", eol(unix) replace
-qui changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "../Results/last.opop", eol(unix) replace
+qui changeeol "./Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "./Results/last.omar", eol(unix) replace
+qui changeeol "./Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "./Results/last.opop", eol(unix) replace
 sleep 500
+display "here I am in stata! 22"

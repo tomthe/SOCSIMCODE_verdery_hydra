@@ -36,11 +36,15 @@ Solved: I converted the file with notepad++ from utf-8 to ASCII AND converted th
 
 #### Socsim wants to read results from ./Results/last but there nothing produces output there
 
+Solved: The RescaleRates.do runs now and creates the output.
+
 maybe the Stata-script copies the the socsim-result-files to this place?
 
 ...yes, if I understand it correctly, the stata-file does this. But I don't understand what it does exactly
 
 #### The Stata-script uses data that is not in the download
+
+Solved: We got the Data from Ashton now!
 
 see e.g. line 67 in the do-file: 
 ```

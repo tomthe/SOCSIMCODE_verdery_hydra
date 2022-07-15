@@ -33,7 +33,27 @@ to
 
 
 
-## Problems and puzzling things
+## Not solved yet
+
+
+The log-files of the stata-script say that it couldn't find the file "../Results/last.omar" (at the very end of the log). I am not sure whether this affects the simulation. The file should be there.
+```
+. changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "../Re
+> sults/last.omar", eol(unix) replace
+(note: file ../Results/last.omar not found)
+
+. changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "../Re
+> sults/last.opop", eol(unix) replace
+(note: file ../Results/last.opop not found)
+```
+-------------------------------
+
+The script always waits for a click on "OK" after the stata script ran through. How to stop this?
+
+From the stata manual: "If you want Stata to exit when the do-file is
+complete rather than flashing on the taskbar, also specify /e on the command line." 16.3.1 
+
+## Old Problems and puzzling things
 
 #### Socsim gives a syntax error on a line with only a comment!?
 

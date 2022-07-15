@@ -5,7 +5,7 @@ echo "done with socsim, now wait"
 sleep 3
 echo "done with waiting, now stata"
 wait $!
-"C:\Program Files\Stata17\StataMP-64.exe" -b do "../Programs/RescaleRates" 1 black constant 1 1901
+"C:\Program Files\Stata17\StataMP-64.exe" -b do "U:\dev\socsim_projects\SOCSIMCODE\Programs\RescaleRates.do" 1 black constant 1 1901
 echo "This is stata!! I mean it was stata"
 sleep 10
 wait $!

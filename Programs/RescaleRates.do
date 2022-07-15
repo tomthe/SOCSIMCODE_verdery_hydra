@@ -359,7 +359,7 @@ if (`parity'==0){
 	}
 //change eol and transfer
 sleep 500
-changeeol "${localdir}//asfr_`race'`npflag'_y`y'" ../fertilityRates/asfr_`race'`npflag'_y`y', eol(unix) replace
+changeeol "${localdir}//asfr_`race'`npflag'_y`y'" ./fertilityRates/asfr_`race'`npflag'_y`y', eol(unix) replace
 sleep 10
 rm "${localdir}//asfr_`race'`npflag'_y`y'"
 
@@ -373,7 +373,7 @@ if (!_rc){
 	rm "../Results/last.opop"
 	}
 sleep 500
-qui changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "../Results/last.omar", eol(unix) replace
-qui changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "../Results/last.opop", eol(unix) replace
+changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "../Results/last.omar", eol(unix) replace
+changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "../Results/last.opop", eol(unix) replace
 sleep 500
-display "here I am in stata! 22"
+display "here I am in stata! 22 - Done completely.."

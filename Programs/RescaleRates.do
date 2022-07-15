@@ -24,6 +24,7 @@ else{
 	cd
 	cd .\Inputs2SOCSIM
 	global localdir="U:\dev\socsim_projects\SOCSIMCODE"
+	cd
 	}	
 
 display "here I am in stata! 3"
@@ -46,8 +47,8 @@ capture prog def parityadjust
 args tfr year
 	//all
 	preserve
-		qui use ./Data/ParityByAgeGeneratingData, clear
-		qui reg pr b14.age##b1.order##c.tfr if ccode=="USA"
+		use ../Data/ParityByAgeGeneratingData, clear
+		reg pr b14.age##b1.order##c.tfr if ccode=="USA"
 		qui keep if ccode=="USA"
 		keep age order
 		qui bysort age order: keep if _n==1
@@ -68,7 +69,7 @@ end
 
 ////////////////////
 //Get the TFR for this year and adjust parity/age curve
-	qui use ./Data/tfr, clear
+	qui use ../Data/tfr, clear
 	keep year *`race'
 	qui keep if year==`y'
 	qui su tfr
@@ -98,7 +99,7 @@ end
 		
 ////////////////////
 //Get and scale by marrital status breakdown
-	use ./Data/pr2married, clear
+	use ../Data/pr2married, clear
 	keep year *`race'
 	qui su pct2mar if year==`y'
 	local pct2mar=r(mean)
@@ -136,15 +137,17 @@ end
 //Get the proportions in each group	and rescale rates accordingly
 
 //Remove the otx, opox and pyr files
-capture rm ./Results/results_`race'`divorcescenario'`npflag'_r`r'.otx
-capture rm ./Results/results_`race'`divorcescenario'`npflag'_r`r'.opox
-capture rm ./Results/results_`race'`divorcescenario'`npflag'_r`r'.pyr
+rm ../Results/results_`race'`divorcescenario'`npflag'_r`r'.otx
+rm ../Results/results_`race'`divorcescenario'`npflag'_r`r'.opox
+rm ../Results/results_`race'`divorcescenario'`npflag'_r`r'.pyr
+
+// display ../Results/results_`race'`divorcescenario'`npflag'_r`r'.otx
 
 display "here I am in stata! 10"
 sleep 250
 
 //Bring in marriage data
-	qui insheet using ./Results/results_`race'`divorcescenario'`npflag'_r`r'.omar, clear
+	insheet using ../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar, clear
 	qui replace v1=trim(itrim(v1))
 	local k=1
 	foreach i in mid wpid hpid dstart dend rend wprior hprior{
@@ -159,7 +162,7 @@ sleep 250
 	qui putmata marrs=(wpid dstart dend), replace
 
 //Load up opop data
-	qui insheet using ./Results/results_`race'`divorcescenario'`npflag'_r`r'.opop, clear
+	qui insheet using ../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop, clear
 	qui replace v1=trim(itrim(v1))
 	local k=1
 	foreach i in pid fem group nev dob mom pop nesibm nesibp lborn marid mstat dod fmult{
@@ -356,21 +359,21 @@ if (`parity'==0){
 	}
 //change eol and transfer
 sleep 500
-qui changeeol "${localdir}//asfr_`race'`npflag'_y`y'" ./fertilityRates/asfr_`race'`npflag'_y`y', eol(unix) replace
+changeeol "${localdir}//asfr_`race'`npflag'_y`y'" ../fertilityRates/asfr_`race'`npflag'_y`y', eol(unix) replace
 sleep 10
 rm "${localdir}//asfr_`race'`npflag'_y`y'"
 
 //change the file names of the prior results files to last
-capture confirm file "./Results/last.omar"
+capture confirm file "../Results/last.omar"
 if (!_rc){
-	rm "./Results/last.omar"
+	rm "../Results/last.omar"
 	}
-capture confirm file "./Results/last.opop"
+capture confirm file "../Results/last.opop"
 if (!_rc){
-	rm "./Results/last.opop"
+	rm "../Results/last.opop"
 	}
 sleep 500
-qui changeeol "./Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "./Results/last.omar", eol(unix) replace
-qui changeeol "./Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "./Results/last.opop", eol(unix) replace
+qui changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.omar" "../Results/last.omar", eol(unix) replace
+qui changeeol "../Results/results_`race'`divorcescenario'`npflag'_r`r'.opop" "../Results/last.opop", eol(unix) replace
 sleep 500
 display "here I am in stata! 22"

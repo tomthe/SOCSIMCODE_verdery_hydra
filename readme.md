@@ -1,3 +1,9 @@
+## How to run this on Hydra01
+use the windows powershell and change into the directory `U:\dev\socsim_projects\SOCSIMCODE>`
+```
+U:\dev\socsim_projects\SOCSIMCODE> .\Inputs2SOCSIM\SOCSIM_blackconstant_r1.sh
+```
+
 ## Adjustments to run this on Hydra01
 
 Only Hydra01 has the right Stata installed (maybe 02 as well).
@@ -52,3 +58,4 @@ see e.g. line 67 in the do-file:
 	qui use ../Data/tfr, clear
 ```
 it tries to load total fertility rates from the ../Data-directory
+

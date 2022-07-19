@@ -48,12 +48,14 @@ The log-files of the stata-script say that it couldn't find the file "../Results
 ```
 -------------------------------
 
-The script always waits for a click on "OK" after the stata script ran through. How to stop this?
+## Old Problems and puzzling things
 
+#### The script always waits for a click on "OK" after the stata script ran through. 
+
+How to stop this?
 From the stata manual: "If you want Stata to exit when the do-file is
 complete rather than flashing on the taskbar, also specify /e on the command line." 16.3.1 
 
-## Old Problems and puzzling things
 
 #### Socsim gives a syntax error on a line with only a comment!?
 

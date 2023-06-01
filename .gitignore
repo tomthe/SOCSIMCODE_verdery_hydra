@@ -5,4 +5,4 @@
 *.otx
 *.pyr
 Data/**
-asfr*
+Inputs2SOCSIM/fertilityRates/asfr*

@@ -12,8 +12,8 @@ input_file ./Results/last
 output_file ./Results/results_blackconstant_r1
 * 1925
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5073858
 include ./Inputs2SOCSIM/mortalityRates/asmp_black_y1925

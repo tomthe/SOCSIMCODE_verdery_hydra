@@ -12,8 +12,8 @@ input_file ./Inputs2SOCSIM/init_white
 output_file ./Results/results_whitecurrent_r1
 * 1880
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5140971
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1880
@@ -22,8 +22,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1880
 run
 * 1881
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5140997
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1881
@@ -32,8 +32,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1881
 run
 * 1882
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141022
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1882
@@ -42,8 +42,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1882
 run
 * 1883
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141048
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1883
@@ -52,8 +52,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1883
 run
 * 1884
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141073
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1884
@@ -62,8 +62,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1884
 run
 * 1885
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141099
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1885
@@ -72,8 +72,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1885
 run
 * 1886
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141125
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1886
@@ -82,8 +82,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1886
 run
 * 1887
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .514115
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1887
@@ -92,8 +92,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1887
 run
 * 1888
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141176
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1888
@@ -102,8 +102,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1888
 run
 * 1889
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141202
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1889
@@ -112,8 +112,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1889
 run
 * 1890
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141227
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1890
@@ -122,8 +122,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1890
 run
 * 1891
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141253
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1891
@@ -132,8 +132,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1891
 run
 * 1892
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141279
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1892
@@ -142,8 +142,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1892
 run
 * 1893
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141304
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1893
@@ -152,8 +152,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1893
 run
 * 1894
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141329
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1894
@@ -162,8 +162,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1894
 run
 * 1895
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141355
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1895
@@ -172,8 +172,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1895
 run
 * 1896
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .514138
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1896
@@ -182,8 +182,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1896
 run
 * 1897
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141406
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1897
@@ -192,8 +192,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1897
 run
 * 1898
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141432
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1898
@@ -202,8 +202,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1898
 run
 * 1899
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141457
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1899
@@ -212,8 +212,8 @@ include ./Inputs2SOCSIM/fertilityRates/asfr_white_y1899
 run
 * 1900
 duration 12
-bint 0
-hetfert 0
+bint 9
+hetfert 1
 random_father 1
 proportion_male .5141483
 include ./Inputs2SOCSIM/mortalityRates/asmp_white_y1900

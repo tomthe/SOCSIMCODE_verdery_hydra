@@ -23,7 +23,7 @@ if c(username)=="amv5430"{
 else{
 	cd
 	cd .\Inputs2SOCSIM
-	global localdir="U:\dev\socsim_projects\SOCSIMCODE"
+	global localdir="U:\dev\socsim_projects\SOCSIMCODE_Ole"
 	cd
 	}	
 
